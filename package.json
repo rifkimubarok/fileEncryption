@@ -1,0 +1,47 @@
+{
+  "name": "fileEncryption",
+  "version": "1.0.0",
+  "description": "Simple website to encrypt file.",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rifkimubarok/"
+  },
+  "author": "Rifki Mubarok & Egi Taufik",
+  "bugs": {
+    "url": "https://github.com/rifkimubarok/"
+  },
+  "homepage": "https://github.com/rifkimubarok/",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.4",
+    "html-webpack-plugin": "^3.2.0",
+    "script-ext-html-webpack-plugin": "^2.0.1",
+    "standard": "^12.0.1",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.10.1",
+    "worker-loader": "^2.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "jszip": "^3.1.5",
+    "popper.js": "^1.14.4"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "$",
+      "FileReader"
+    ]
+  }
+}
