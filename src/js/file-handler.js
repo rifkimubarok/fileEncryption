@@ -71,7 +71,7 @@ export default class FileHandler {
 
       // Starting to hide files.
       const progressText = $('#progressText')
-      progressText.html('Hiding files inside image.')
+      progressText.html('Sedang mengenkripsi file...')
 
       // Reset output.
       const resultOut = $('#resultOut')
@@ -155,7 +155,7 @@ export default class FileHandler {
 
       // Starting to hide files.
       const progressText = $('#progressText')
-      progressText.html('Revealing files from image.')
+      progressText.html('Sedang dekripsi file....')
 
       // Reset output.
       const resultOut = $('#resultOut')
@@ -175,7 +175,7 @@ export default class FileHandler {
         if (e.data.progress === 4) {
           // If the web worker was successful.
           setTimeout(() => {
-            progressText.html('Reveal successful!')
+            progressText.html('Dekripsi berhasil successful!')
             progressBar.removeClass('progress-bar-animated')
             progressBar.addClass('bg-success')
 
