@@ -43,7 +43,7 @@ export default class FileHandler {
   }
 
   /**
-   * @private Hide the given files within the given image.
+   * @private enkripsi file.
    */
   hide () {
     $('#weHaveLiftOff').off('click', this.hide.bind(this))
@@ -69,7 +69,7 @@ export default class FileHandler {
       progressBar.css('width', 0)
       progressBar.attr('aria-valuenow', 0)
 
-      // Starting to hide files.
+      // Starting to enkrip files.
       const progressText = $('#progressText')
       progressText.html('Sedang mengenkripsi file...')
 
@@ -129,7 +129,7 @@ export default class FileHandler {
   }
 
   /**
-   * @private Reveal the files within the given image.
+   * @private dekrip.
    */
   reveal () {
     $('#weHaveLiftOff').off('click', this.hide.bind(this))
@@ -312,7 +312,7 @@ export default class FileHandler {
       return false
     }
 
-    if (/*image[0].type.indexOf('image') !== -1*/true) {
+    if (true) {
       this.revealImage = image[0]
       this.printFiles(image, imageOutput)
 
@@ -334,7 +334,7 @@ export default class FileHandler {
       imageInput.addClass('is-invalid')
 
       // Make everything red.
-      imageInputLabel.html('Choose image')
+      imageInputLabel.html('Choose file')
       imageInputLabel.removeClass('text-success')
       imageInputLabel.addClass('text-danger')
       feedback.css('display', 'block')

@@ -30,7 +30,7 @@ $(document).ready(() => {
   // Add event handler for hide files input.
   document.querySelector('#hideFiles').addEventListener('change', fileHandler.handleHideFiles.bind(fileHandler), false)
 
-  // Add event handler for reveal image input.
+  // Add event handler for file input.
   document.querySelector('#revealImage').addEventListener('change', fileHandler.handleRevealImage.bind(fileHandler), false)
 
   // Add event handler for password confirmation.
