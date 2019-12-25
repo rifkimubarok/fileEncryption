@@ -142,7 +142,7 @@ export default class FileHandler {
 
       // Send information to web worker.
       revealWorker.postMessage({
-        image: this.revealImage,
+        file: this.revealImage,
         password: password
       })
 
@@ -269,7 +269,7 @@ export default class FileHandler {
       imageInput.addClass('is-valid')
 
       // Make everything green.
-      imageInputLabel.html('Image chosen')
+      imageInputLabel.html('File chosen')
       imageInputLabel.removeClass('text-danger')
       imageInputLabel.addClass('text-success')
       feedback.css('display', 'none')
@@ -321,7 +321,7 @@ export default class FileHandler {
       imageInput.addClass('is-valid')
 
       // Make everything green.
-      imageInputLabel.html('Image chosen')
+      imageInputLabel.html('File chosen')
       imageInputLabel.removeClass('text-danger')
       imageInputLabel.addClass('text-success')
       feedback.css('display', 'none')

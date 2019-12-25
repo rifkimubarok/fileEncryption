@@ -5,7 +5,6 @@ onmessage = function (e) {
   const worker = this
 
   const files = e.data.files
-  const image = e.data.image
   const password = e.data.password
 
   // Set compression level.

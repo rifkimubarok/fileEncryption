@@ -4,16 +4,16 @@ import JSZip from 'jszip'
 onmessage = function (e) {
   const worker = this
 
-  const image = e.data.image
+  const file = e.data.file
   const password = e.data.password
 
   worker.postMessage({
     progress: 0
   })
 
-  // Read image file as array buffer.
+  // Read file file as array buffer.
   const reader = new FileReader()
-  reader.readAsArrayBuffer(image)
+  reader.readAsArrayBuffer(file)
   reader.onload = function () {
     worker.postMessage({
       progress: 1
