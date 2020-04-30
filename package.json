@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jszip": "^3.1.5",
     "popper.js": "^1.14.4"
   },
